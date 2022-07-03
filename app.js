@@ -22,7 +22,7 @@ const fetchPrice = async (ctype) => {
 
     const price = r.data.coin.price;
     const volume = r.data.coin.volume;
-    const change = r.data.coin.priceChange1d;
+    const change = r.data.coin.priceChange1h;
     const base = r.data.coin.name;
     const rank = r.data.coin.rank;
     const target = 'USD';
