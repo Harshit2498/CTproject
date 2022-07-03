@@ -17,7 +17,7 @@ form.addEventListener('submit', (e) => {
 });
 
 const fetchPrice = async (ctype) => {
-    const r = await axios.get(`https://api.coinstats.app/public/v1/coins/${ctype}?currence=INR`);
+    const r = await axios.get(`https://api.coinstats.app/public/v1/coins/${ctype}`);
     console.log(r.data.coin.price);
 
     const price = r.data.coin.price;
